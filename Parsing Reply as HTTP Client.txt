@@ -1,0 +1,11 @@
+> str = "Hello Lua user"
+> = str:sub( 7)      -- from character 7 until the end
+Lua user
+
+
+> str = "Hello Lua user"
+> = str:.find("Lua")
+7
+
+str = "this is <html>another string</html> blablabla"
+newstr = str:sub(str:find("<html>") + 6, str:find("</html>")-1) 
